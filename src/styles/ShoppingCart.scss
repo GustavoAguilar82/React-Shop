@@ -4,6 +4,14 @@
     box-sizing: border-box;
     position: absolute;
     right: 0;
+    background-color: white;
+    top: 60px;
+    bottom: auto;
+    border-radius: 6px;
+    border: 1px solid var(--very-light-pink);
+    animation: swipeLeft 0.26s ease;
+    overflow-y: auto;
+    height: 350px;
   }
   .title-container {
     display: flex;
@@ -72,8 +80,19 @@
     font-weight: bold;
     height: 50px;
   }
+  .closeImage{
+    cursor: pointer;
+  }
   @media (max-width: 640px) {
     .product-detail {
       width: 100%;
+    }
+  }
+  @keyframes swipeLeft {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 360px;
     }
   }

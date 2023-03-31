@@ -16,28 +16,34 @@ import { OrdersHistory } from "../pages/OrdersHistory";
 import { ProductDetail } from "../containers/ProductDetail";
 import { ShoppingCart } from "../containers/ShoppingCart";
 import { ShoppingCartItem } from "../components/ShoppingCartItem"; 
+import { AppContext } from "../context/AppContext";
+import {useInitialState} from '../hooks/useInitialState';
 import '../styles/global.scss'
 
 const App = () => {
+    const initialState = useInitialState();
+
     return (
-        <BrowserRouter>
-            <Layout>
-                <Routes>
-                    <Route exact path="/" element={<Home />} />
-                    <Route exact path="/recovery-password" element={<RecoveryPassword />} />
-                    <Route exact path="/new-password" element={<NewPassword/>} />
-                    <Route exact path="/sent-email" element={<SentEmail/>} />
-                    <Route exact path="/login" element={<Login />} />
-                    <Route exact path="/create-account" element={<CreateAccount />} />
-                    <Route exact path="/my-account" element={<MyAccount />} />
-                    <Route exact path="my-order-buyed" element= {<MyOrderBuyed> <MyOrderBuyedItem></MyOrderBuyedItem> </MyOrderBuyed>} />
-                    <Route exact path="my-orders-history" element= {<OrdersHistory></OrdersHistory>}/>
-                    <Route exact path="product-details" element={<ProductDetail></ProductDetail>} />
-                    <Route exact path="shopping-cart" element={<ShoppingCart> <ShoppingCartItem> </ShoppingCartItem></ShoppingCart>} />
-                    <Route path="*" element={<NotFound />} />
-                </Routes>
-            </Layout>
-        </BrowserRouter>
+        <AppContext.Provider value={initialState}> 
+            <BrowserRouter>
+                <Layout>
+                    <Routes>
+                        <Route exact path="/" element={<Home />} />
+                        <Route exact path="/recovery-password" element={<RecoveryPassword />} />
+                        <Route exact path="/new-password" element={<NewPassword/>} />
+                        <Route exact path="/sent-email" element={<SentEmail/>} />
+                        <Route exact path="/login" element={<Login />} />
+                        <Route exact path="/create-account" element={<CreateAccount />} />
+                        <Route exact path="/my-account" element={<MyAccount />} />
+                        <Route exact path="my-order-buyed" element= {<MyOrderBuyed> <MyOrderBuyedItem></MyOrderBuyedItem> </MyOrderBuyed>} />
+                        <Route exact path="my-orders-history" element= {<OrdersHistory></OrdersHistory>}/>
+                        <Route exact path="product-details" element={<ProductDetail></ProductDetail>} />
+                        <Route exact path="shopping-cart" element={<ShoppingCart> <ShoppingCartItem> </ShoppingCartItem></ShoppingCart>} />
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </Layout>
+            </BrowserRouter>
+        </AppContext.Provider>
     );
 }
 
