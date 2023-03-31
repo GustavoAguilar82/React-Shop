@@ -6,8 +6,8 @@ module.exports={
     entry: './src/index.js',   //punto de entrada
     output: {    //lugar al que saldran los archivos
         path: path.resolve(__dirname, 'dist'),  //en nuestro path crea la carpeta dist, de distribution
-        filename: 'bundle.js',  //nombre del archivo js resultante
-        publicPath: '/',
+        filename: 'React-Shop/bundle.js',  //nombre del archivo js resultante
+        publicPath: '/React-Shop/',
     },
     mode: 'development',
     resolve: {
