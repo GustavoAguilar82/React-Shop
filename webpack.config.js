@@ -8,6 +8,7 @@ module.exports={
         path: path.resolve(__dirname, 'dist'),  //en nuestro path crea la carpeta dist, de distribution
         filename: 'React-Shop/bundle.js',  //nombre del archivo js resultante
         publicPath: '/React-Shop/',
+        clean: true
     },
     mode: 'development',
     resolve: {
@@ -19,8 +20,6 @@ module.exports={
             '@styles' : path.resolve(__dirname, 'src/styles/'),
             '@icons' : path.resolve(__dirname, 'src/assets/icons/'),
             '@logos' : path.resolve(__dirname, 'src/assets/logos/'),
-
-
         }
     },
     module: {  //para cada tipo de archivo
