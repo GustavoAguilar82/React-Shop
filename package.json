@@ -31,6 +31,7 @@
   "author": "Gustavo Aguilar <gustavoalonsoaa82@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@jamesives/github-pages-deploy-action": "^4.4.1",
     "css-loader": "^6.7.3",
     "gh-pages": "^5.0.0",
     "mini-css-extract-plugin": "^2.7.5",
