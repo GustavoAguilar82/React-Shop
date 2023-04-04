@@ -25,7 +25,7 @@ const ProductList = () => {
               </figure>
             </div>
           </div>
-          {products.map( (product) => (<ProductItem product={product} key={product.id}></ProductItem>))}
+          {products.map( (product) => (<ProductItem product={product} key={product.id} inShoppingCart={product.inShoppingCart}></ProductItem>))}
         </div>
       </section>
     )

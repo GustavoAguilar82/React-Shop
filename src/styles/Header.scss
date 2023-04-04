@@ -3,10 +3,14 @@
     justify-content: space-between;
     padding: 0 24px;
     border-bottom: 1px solid var(--very-light-pink);
-    position: relative;
+    position: sticky;
+    top: 0;
+    background-color:#F7F7F7;
   }
   .menu {
     display: none;
+    cursor: pointer;
+    padding: 8px
   }
   .nav-logo {
     width: 100px;
@@ -50,6 +54,8 @@
   }
   .navbar-shopping-cart {
     position: relative;
+    cursor: pointer;
+    padding: 8px
   }
   .navbar-shopping-cart div {
     width: 16px;
