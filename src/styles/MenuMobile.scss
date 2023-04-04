@@ -1,6 +1,14 @@
 
   .mobile-menu {
-    padding: 24px;
+    width: 180px;
+    padding: 0;
+    top: 61px;
+    display: inline-grid;
+    z-index: 3;
+    position: fixed;
+    background-color: #F7F7F7;
+    border: var(--very-light-pink);
+    left: 0px;
   }
   .mobile-menu a {
     text-decoration: none;
@@ -9,7 +17,7 @@
     /* margin-bottom: 24px; */
   }
   .mobile-menu ul {
-    padding: 0;
+    padding: 0 24px;
     margin: 24px 0 0;
     list-style: none;
   }

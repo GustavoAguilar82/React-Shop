@@ -7,6 +7,7 @@
     position: absolute;
     top: 100%;
     right: 55px;
+    background-color: #F7F7F7;
   }
   .desktop-menu ul {
     list-style: none;
@@ -33,6 +34,7 @@
     text-decoration: none;
     margin-bottom: 20px;
     display: inline-block;
+    font-weight: bold;
   }
   @media (max-width: 640px) {
     .desktop-menu {

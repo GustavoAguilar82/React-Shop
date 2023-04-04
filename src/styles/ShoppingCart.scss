@@ -11,7 +11,8 @@
     border: 1px solid var(--very-light-pink);
     animation: swipeLeft 0.26s ease;
     overflow-y: auto;
-    height: 350px;
+    height: fit-content;
+    max-height: 600px;
   }
   .title-container {
     display: flex;
@@ -19,6 +20,8 @@
   .title-container img {
     transform: rotate(180deg);
     margin-right: 14px;
+    cursor: pointer;
+    padding: 8px
   }
   .title {
     font-size: var(--lg);
@@ -33,6 +36,8 @@
     margin-bottom: 24px;
     border-radius: 8px;
     padding: 0 24px;
+    position: sticky;
+    bottom: 0;
   }
   .order p:nth-child(1) {
     display: flex;
@@ -45,6 +50,11 @@
   .order p:nth-child(2) {
     text-align: end;
     font-weight: bold;
+  }
+  .order-Total-and-Bottom{
+    position: sticky;
+    bottom: 0;
+    background-color: #F7F7F7;
   }
   .shopping-cart {
     display: grid;
