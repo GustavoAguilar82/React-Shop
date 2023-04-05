@@ -14,8 +14,7 @@ const Header = () => {
     const [toggleShoppingCart, settoggleShoppingCart] = useState(false);
     const [isVisibleMobileMenu, setisVisibleMobileMenu] = useState(false);
     const {state} = useContext(AppContext);
-    
-    const myShoppingCart = document.getElementById("shoppingCart")
+
 
     function closeMenus(){
         setToggle(false);
@@ -49,29 +48,30 @@ const Header = () => {
                 <img src={logo} alt="logo" className="nav-logo" />
                 <ul>
                     <li>
-                        <a href="/">All</a>
+                    <a onClick={() => {window.location.href="/"}}>All</a>
                     </li>
                     <li>
-                        <a href="/">Clothes</a>
+                    <a onClick={() => {window.location.href="/clothes"}}>Clothes</a>
                     </li>
                     <li>
-                        <a href="/">Electronics</a>
+                        <a onClick={() => {window.location.href="/electronics"}}>Electronics</a>
                     </li>
                     <li>
-                        <a href="/">Furnitures</a>
+                        <a onClick={() => {window.location.href="/furniture"}}>Furniture</a>
                     </li>
                     <li>
-                        <a href="/">Toys</a>
+                        <a onClick={() => {window.location.href="/shoes"}}>Shoes</a>
                     </li>
                     <li>
-                        <a href="/">Others</a>
+                        <a onClick={() => {window.location.href="/others"}}>Others</a>
                     </li>
                 </ul>   
             </div>
+
             <div className="navbar-right">
                 <ul>
                     <li className="navbar-email" onClick={handleToggle}> 
-                        platzi@example.com
+                        gustavo@aguilar.com
                     </li>
                     <li className="navbar-shopping-cart" onClick={handletoggleShoppingCart}>
                         <img src={shoppingCartIcon} alt="shopping cart" />

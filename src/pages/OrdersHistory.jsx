@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/NewPassword.scss'
+import arrow from '@icons/flechita.svg';
 
 const OrdersHistory = ({children}) => {
     return(
@@ -13,7 +14,7 @@ const OrdersHistory = ({children}) => {
                         <span>6 articles</span>
                     </p>
                     <p>$560.00</p>
-                    <img src="./icons/flechita.svg" alt="arrow"/>
+                    {/*<img src={arrow} alt="arrow"/>*/}
                 </div>
             </div>
         </div>
