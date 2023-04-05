@@ -12,6 +12,7 @@ const ProductItem = ({product}) => {
     const handleClick = item => {
         item.inShoppingCart = true;
         addToCart(item);
+        console.log(item)
     }
     return(
         <div className="product-card">

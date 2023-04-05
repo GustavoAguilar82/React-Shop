@@ -6,13 +6,11 @@ const Menu = () => {
         <div className="desktop-menu">
             <ul>
             <li>
-                <a href="/" className="title">My orders</a>
+                <a onClick={() => {window.location.href="/my-account"}}>My Account</a>
             </li>
-
             <li>
-                <a href="/">My account</a>
+                <a onClick={() => {window.location.href="/my-orders-history"}}>My Orders</a>
             </li>
-
             <li>
                 <a href="/">Sign out</a>
             </li>

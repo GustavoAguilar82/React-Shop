@@ -9,37 +9,37 @@ const MenuMobile = () => {
             <a href="/">CATEGORIES</a>
           </li>
           <li>
-            <a href="/">All</a>
+            <a onClick={() => {window.location.href="/"}}>All</a>
           </li>
           <li>
-            <a href="/">Clothes</a>
+            <a onClick={() => {window.location.href="/clothes"}}>Clothes</a>
           </li>
           <li>
-            <a href="/">Electronics</a>
+            <a onClick={() => {window.location.href="/electronics"}}>Electronics</a>
           </li>
           <li>
-            <a href="/">Furnitures</a>
+            <a onClick={() => {window.location.href="/furniture"}}>Furniture</a>
           </li>
           <li>
-            <a href="/">Toys</a>
+            <a onClick={() => {window.location.href="/shoes"}}>Shoes</a>
           </li>
           <li>
-            <a href="/">Other</a>
-          </li>
-        </ul>
-    
-        <ul>
-          <li>
-            <a href="/">My orders</a>
-          </li>
-          <li>
-            <a href="/">My account</a>
+            <a onClick={() => {window.location.href="/others"}}>Others</a>
           </li>
         </ul>
     
         <ul>
           <li>
-            <a href="/" class="email">platzi@example.com</a>
+            <a onClick={() => {window.location.href="/my-account"}}>My Account</a>
+          </li>
+          <li>
+            <a onClick={() => {window.location.href="/my-orders-history"}}>My Orders</a>
+          </li>
+        </ul>
+    
+        <ul>
+          <li>
+            <p>gustavo@aguilar.com</p>
           </li>
           <li>
             <a href="/" class="sign-out">Sign out</a>

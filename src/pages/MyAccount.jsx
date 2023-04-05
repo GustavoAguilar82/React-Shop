@@ -9,10 +9,10 @@ const MyAccount = () =>{
         <form action="/" class="form">
             <div>
             <label for="name" class="label">Name</label>
-            <p class="value">Camila Yokoo</p>
+            <p class="value">Gustavo Aguilar</p>
         
             <label for="email" class="label">Email</label>
-            <p class="value">camilayokoo@gmail.com</p>
+            <p class="value">gustavo@aguilar.com</p>
         
             <label for="password" class="label">Password</label>
             <p class="value">*********</p>
