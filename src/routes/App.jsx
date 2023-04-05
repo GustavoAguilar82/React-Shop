@@ -25,7 +25,7 @@ const App = () => {
 
     return (
         <AppContext.Provider value={initialState}> 
-            <BrowserRouter basename="/React-Shop">  {/* basename="/React-Shop" se debe borrar para trabajar en local*/}
+            <BrowserRouter basename="/React-Shop">  {/*  basename="/React-Shop" se debe borrar para trabajar en local*/}
                 <Layout>
                     <Routes>
                         <Route exact path="/" element={<Home />} />
