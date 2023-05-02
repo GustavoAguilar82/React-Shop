@@ -28,7 +28,7 @@ const App = () => {
             <HashRouter basename="/React-Shop">  {/*  basename="/React-Shop" se debe borrar para trabajar en local*/}
                 <Layout>
                     <Routes>
-                        <Route exact path="/React-Shop" element={<Home />} />
+                        <Route exact path="/" element={<Home />} />
                         <Route exact path="/clothes" element={<Home category={"clothes-1"}/>} />
                         <Route path="/electronics" element={<Home category={"electronics-2"}/>} />
                         <Route exact path="/furniture" element={<Home category={"furniture-3"}/>} />
