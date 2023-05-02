@@ -1,4 +1,5 @@
 import React, { useState, useContext} from "react";
+
 import '@styles/Header.scss'
 import { Menu } from "@components/Menu";
 import { MenuMobile } from "./MenuMobile";
@@ -51,10 +52,10 @@ const Header = () => {
                     <a onClick={() => {window.location.href="/"}}>All</a>
                     </li>
                     <li>
-                    <a onClick={() => {window.location.href="/clothes"}}>Clothes</a>
+                    <a onClick={() => {window.location.href="#/clothes"}}>Clothes</a>
                     </li>
                     <li>
-                        <a onClick={() => {window.location.href="/electronics"}}>Electronics</a>
+                        <a onClick={() => {window.location.href="#/electronics"}}>Electronics</a>
                     </li>
                     <li>
                         <a onClick={() => {window.location.href="/furniture"}}>Furniture</a>

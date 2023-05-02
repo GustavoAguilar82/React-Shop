@@ -15,6 +15,7 @@
   "homepage": "https://gustavoaguilar82.github.io/React-Shop",
   "name": "react-shop",
   "version": "1.0.0",
+  "private": false,
   "description": "React shop",
   "main": ".src/index.js",
   "scripts": {
