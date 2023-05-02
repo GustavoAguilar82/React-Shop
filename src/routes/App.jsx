@@ -25,7 +25,7 @@ const App = () => {
 
     return (
         <AppContext.Provider value={initialState}> 
-            <HashRouter basename="/React-Shop">  {/*  basename="/React-Shop" se debe borrar para trabajar en local*/}
+            <BrowserRouter basename="/React-Shop">  {/*  basename="/React-Shop" se debe borrar para trabajar en local*/}
                 <Layout>
                     <Routes>
                         <Route exact path="/" element={<Home />} />
@@ -47,7 +47,7 @@ const App = () => {
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </Layout>
-            </HashRouter>
+            </BrowserRouter>
         </AppContext.Provider>
     );
 }
