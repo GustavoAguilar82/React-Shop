@@ -58,13 +58,13 @@ const Header = () => {
                         <a onClick={() => {window.location.href="#/electronics"}}>Electronics</a>
                     </li>
                     <li>
-                        <a onClick={() => {window.location.href="/furniture"}}>Furniture</a>
+                        <a onClick={() => {window.location.href="#/furniture"}}>Furniture</a>
                     </li>
                     <li>
-                        <a onClick={() => {window.location.href="/shoes"}}>Shoes</a>
+                        <a onClick={() => {window.location.href="#/shoes"}}>Shoes</a>
                     </li>
                     <li>
-                        <a onClick={() => {window.location.href="/others"}}>Others</a>
+                        <a onClick={() => {window.location.href="#/others"}}>Others</a>
                     </li>
                 </ul>   
             </div>
